@@ -186,7 +186,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'السلام عليكم ورحمة الله وبركاته') {
+            if (message.content === 'السلام عليكم ') {
               message.channel.send('**وعليكم السلام ورحمة الله وبركاته**');
               
                
@@ -230,8 +230,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
          client.on('message', message => {
-            if (message.content === 'يلا برب') {
-              message.channel.send('**تيــت . مع السلامة**');
+            if (message.content === 'ا برب') {
+              message.channel.send('**تيــت . لا تتأخر**');
               
                
 
@@ -354,7 +354,7 @@ client.on('message', msg => {
   command = command.slice(prefix.length);
   let args = msg.content.split(" ").slice(1);
 
-    if(command === "clear") {
+    if(command === "مسح") {
         const emoji = client.emojis.find("name", "wastebasket")
     let textxt = args.slice(0).join("");
     if(msg.member.hasPermission("MANAGE_MESSAGES")) {
@@ -434,13 +434,14 @@ client.on('message', message => {
   
   ❖ .bc4 <message>  ➾ لي ارسال رسالة لي كل الاعضاء
 
-  ❖ ملاحظة لا يزال الهيلب في التطوير  ➾ سفـاح و جوست
-
   ❖ #server ➾ لي معرفة معلومات عن السيرفر
 
+  ❖ ملاحظة لا يزال الهيلب في التطوير  ➾ سفـاح و جوست
+
   ❖ .ping  ➾ لي معرفة بنق البوت
-  **
-  `);
+ **
+
+ `);
   
       }
   });
@@ -490,7 +491,7 @@ client.on('message', message => {
       message.channel.sendMessage(`**✅   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'wt')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
+  client.user.setActivity(argresult, {type:'WATCH'});
       message.channel.sendMessage(`**✅   ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'ls')) {
